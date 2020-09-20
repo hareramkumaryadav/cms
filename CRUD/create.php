@@ -7,7 +7,7 @@ insertion();
        <h1 class="text-center">CREATE</h1>
         <div class="col-sm-6 ">
            
-            <form method="post" action="create.php">
+            <form method="post" action="index.php">
                 <div class="form-group">
                    <label for="username">USERNAME</label>
                     <input class="form-control " type="text" placeholder="USERNAME" id="username" name="username"/>
