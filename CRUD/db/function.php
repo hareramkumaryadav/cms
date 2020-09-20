@@ -37,7 +37,7 @@ if(isset($_POST['submit']))
     $query.="values(' $username',' $password')";
     
     result($connection,$query);
-    
+     echo "<script>window.location='read.php';</script>";
   
 }
   
@@ -53,7 +53,7 @@ function sawalldata(){
          print_r($row);
         echo "</pre>";
         
-        
+         echo "<script>window.location='update.php';</script>";
         
     }
     
@@ -89,7 +89,7 @@ if(isset($_POST['update']))
     $id=$_POST['id'];
     $query="update user set username=' $username',password=' $password' where id=$id ";
     result($connection,$query);
-
+ echo "<script>window.location='delete.php';</script>";
 }
 }
 //delete user data one by one
@@ -101,7 +101,7 @@ function delete()
     $id=$_POST['id'];
     $query="delete from user where id=$id ";
     result($connection,$query);
-    
+     echo "<script>window.location='index.php';</script>";
 }
 }
 ?>
